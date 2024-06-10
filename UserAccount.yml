@@ -39,3 +39,5 @@ auth-service:
     userFail: user registration failed
     loginSuc: user Login succesfull
     loginErr: invalid credentials
+    delMsg: user deleted sucessfull
+    delErr: user Not Found
