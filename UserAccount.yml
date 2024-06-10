@@ -32,3 +32,10 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+
+auth-service:
+  messages: 
+    userReg: user registration succesfull
+    userFail: user registration failed
+    loginSuc: user Login succesfull
+    loginErr: invalid credentials
