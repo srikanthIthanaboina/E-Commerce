@@ -15,6 +15,7 @@ spring:
     hibernate:
       ddl-auto: update
 
+
 management:
   endpoints:
     web:
@@ -24,6 +25,7 @@ management:
 server:
   port: 8081
 
+
 eureka:
   client:
     service-url:
@@ -32,10 +34,10 @@ eureka:
     prefer-ip-address: true
 
 auth-service:
-  messages:
-    userReg: user registration successful
+  messages: 
+    userReg: user registration succesfull
     userFail: user registration failed
-    loginSuc: user login successful
+    loginSuc: user Login succesfull
     loginErr: invalid credentials
-    delMsg: user deleted successful
-    delErr: user not found
+    delMsg: user deleted sucessfull
+    delErr: user Not Found
