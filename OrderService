@@ -35,9 +35,9 @@ eureka:
 
 order-service:
   messages: 
-    userReg: user registration succesfull
-    userFail: user registration failed
-    loginSuc: user Login succesfull
-    loginErr: invalid credentials
-    delMsg: user deleted sucessfull
-    delErr: user Not Found
+    ordSuc: Order added successfully
+    ordUPda: Order updated successfully
+    ordDele: Order deleted successfully
+    ordUserFet: Orders fetched successfully
+    gettAllOrd: All orders fetched successfully
+    ordFiltefet: Filtered orders fetched successfully
