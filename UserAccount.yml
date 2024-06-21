@@ -1,8 +1,11 @@
 spring:
-  boot:
+ boot:
     admin:
       client:
         url: http://localhost:1111/
+
+ config:
+    import: optional:configserver:http://localhost:2222/
 
   datasource:
     url: jdbc:mysql://localhost:3306/murali
