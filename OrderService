@@ -1,0 +1,43 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/murali
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  port: 8081
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+order-service:
+  messages: 
+    userReg: user registration succesfull
+    userFail: user registration failed
+    loginSuc: user Login succesfull
+    loginErr: invalid credentials
+    delMsg: user deleted sucessfull
+    delErr: user Not Found
