@@ -1,13 +1,25 @@
 spring:
-  application:
-    name: UserAccount
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
 
-  config:
-    import: optional:configserver:http://localhost:2222/
+  datasource:
+    url: jdbc:mysql://localhost:3306/murali
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
-logging:
-  level:
-    org.springframework.cloud.config: DEBUG
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 server:
   port: 8081
@@ -19,14 +31,8 @@ eureka:
   instance:
     prefer-ip-address: true
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-
 auth-service:
-  messages: 
+  messages:
     userReg: user registration successful
     userFail: user registration failed
     loginSuc: user login successful
