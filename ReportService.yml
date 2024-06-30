@@ -1,0 +1,8 @@
+report-service:
+  message: 
+    unSuppForm: Unsupported format
+    success: success
+    fetAllOrders: Fetched all orders
+    fetOrdersBySta: Fetched orders by status
+    fetOrdersByRan: Fetched orders by date range
+    Err: Error generating PDF
